@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "./Main";
-import { FaLinkedinIn, FaGithub, FaRegMoon, FaSun } from 'react-icons/fa';
+import Skills from "./Skills";
+import { FaLinkedinIn, FaGithub, FaRegMoon } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FiSun } from "react-icons/fi";
 
@@ -50,6 +51,9 @@ const Navbar = (props) => {
         </ul>
       </div>
     </div>
+    {/* Insert Main content here */}
+    <Main />
+    <Skills />
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
@@ -73,13 +77,13 @@ const Navbar = (props) => {
       <div className="w-full h-auto mt-5 ml-5">
         <h3>Lets connect</h3>
         <ul className="flex justify-start gap-x-3 mt-3">
-          <Link href="/" className="btn btn-primary rounded-full">
+          <Link href="/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
             <FaLinkedinIn className="" size={25}/>
           </Link>
-          <Link href="https://github.com/Ethansteip" className="btn btn-primary rounded-full">
+          <Link href="https://github.com/Ethansteip" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
             <FaGithub size={25}/>
           </Link>
-          <Link href="/" className="btn btn-primary rounded-full">
+          <Link href="/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
             <HiOutlineMail size={25}/>
           </Link>
         </ul>
