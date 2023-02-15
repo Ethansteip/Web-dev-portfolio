@@ -1,43 +1,75 @@
+import { FaReact, FaLaravel } from "react-icons/fa";
+import { SiNextdotjs, SiExpress, SiRubyonrails, SiTailwindcss, SiNodedotjs } from "react-icons/si";
+import { DiJavascript1, DiRubyRough, DiPhp, DiHtml5, DiCss3, DiPython } from "react-icons/di";
 
-const frameworks = {
-  React: {
+
+export const frameworks = [
+  {
+    id: 1,
     name: "React",
-    img_src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+    icon: <FaReact size={25} />
   },
-  Next: {
+  {
+    id: 2,
     name: "Next js",
-    img_src: "https://cdn.worldvectorlogo.com/logos/next-js.svg"
+    icon: <SiNextdotjs size={25} />
   },
-  Express: {
+  {
+    id: 3,
     name: "Express",
-    img_src: "https://skillshack.blob.core.windows.net/uploads/express.webp"
+    icon: <SiExpress size={25} />
   },
-  Laravel: {
+  {
+    id: 4,
     name: "Laravel",
-    img_src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+    icon: <FaLaravel size={25} />
   },
-  Rails: {
+  {
+    id: 5,
     name: "Rails",
-    img_src: "https://w7.pngwing.com/pngs/782/228/png-transparent-ruby-on-rails-rubygems-amazon-dynamodb-ruby-text-logo-ruby-thumbnail.png"
+    icon: <SiRubyonrails size={30} />
   },
-  tailwind: {
+  {
+    id: 6,
     name: "Tailwind",
-    img_src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+    icon: <SiTailwindcss size={25} />
   },
-  jquery: {
-    name: "Jquery",
-    img_src: "https://w7.pngwing.com/pngs/1004/13/png-transparent-jquery-hd-logo.png"
+];
+
+export const languages = [
+  {
+    id: 1,
+    name: "Javascript",
+    icon: <DiJavascript1 size={25} />
   },
-};
-
-//console.log(frameworks);
-
-const frameworkArray = []
-
-for (const x in frameworks) {
-  console.log(x["name"]);
-}
-
-console.log(frameworkArray);
-
-//export default frameworks;
+  {
+    id: 2,
+    name: "Node",
+    icon: <SiNodedotjs size={25} />
+  },
+  {
+    id: 3,
+    name: "HTML",
+    icon: <DiHtml5 size={25} />
+  },
+  {
+    id: 4,
+    name: "CSS",
+    icon: <DiCss3 size={25} />
+  },
+  {
+    id: 5,
+    name: "Ruby",
+    icon: <DiRubyRough size={25} />
+  },
+  {
+    id: 6,
+    name: "PHP",
+    icon: <DiPhp size={25} />
+  },
+  {
+    id: 7,
+    name: "Python",
+    icon: <DiPython size={25} />
+  },
+];

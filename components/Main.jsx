@@ -14,7 +14,7 @@ const Main = () => {
         </div>
         <div>
           <ul className="flex justify-start gap-x-3 mt-3">
-            <Link href="/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
+            <Link href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
               <FaLinkedinIn className="" size={25}/>
             </Link>
             <Link href="https://github.com/Ethansteip" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
