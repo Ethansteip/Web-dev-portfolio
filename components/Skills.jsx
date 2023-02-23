@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import SkillsCard from './SkillsCard';
-import { frameworks, languages } from '../Data/skills_data.js';
+import { frameworks, languages, databases } from '../Data/skills_data.js';
 
 const Skills = () => {
 
@@ -21,17 +21,29 @@ const Skills = () => {
             />
     });
 
+  const databaseArray = databases.map((database) => {
+    return <SkillsCard
+              key={database.id}  
+              name={database.name}
+              icon={database.icon}
+            />
+    });
+
   return(
-    <section className="w-full h-1/2 text-left px-5">
+    <section className="flex flex-col justify-center items-center w-full h-1/2 px-5">
       <h2>Skills</h2>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3">These are the technologies I enjoy working with.</p>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3">Languages, Markup and Styling</p>
-      <div className='flex w-full justify-start gap-x-5'>
+      <p className="uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3">These are the technologies I enjoy working with.</p>
+      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Languages</p>
+      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
         {languagesArray}
       </div>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3">Frameworks & Libraries</p>
-      <div className='flex w-full justify-start gap-x-5'>
+      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Frameworks & Libraries</p>
+      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
         {frameworkArray}
+      </div>
+      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Database Management</p>
+      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
+        {databaseArray}
       </div>
     </section>
   );

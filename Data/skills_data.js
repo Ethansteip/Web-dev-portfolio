@@ -1,5 +1,5 @@
 import { FaReact, FaLaravel } from "react-icons/fa";
-import { SiNextdotjs, SiExpress, SiRubyonrails, SiTailwindcss, SiNodedotjs } from "react-icons/si";
+import { SiNextdotjs, SiExpress, SiRubyonrails, SiTailwindcss, SiNodedotjs, SiMysql, SiPostgresql } from "react-icons/si";
 import { DiJavascript1, DiRubyRough, DiPhp, DiHtml5, DiCss3, DiPython } from "react-icons/di";
 
 
@@ -73,3 +73,16 @@ export const languages = [
     icon: <DiPython size={25} />
   },
 ];
+
+export const databases = [
+  {
+    id: 1,
+    name: 'MySQL',
+    icon: <SiMysql size={30}/>
+  },
+  {
+    id: 2,
+    name: "PostgreSQL",
+    icon: <SiPostgresql size={25}/>
+  }
+]
