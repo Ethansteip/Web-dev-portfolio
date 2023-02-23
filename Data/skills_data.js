@@ -39,7 +39,7 @@ export const frameworks = [
 export const languages = [
   {
     id: 1,
-    name: "JS",
+    name: "Javascript",
     icon: <DiJavascript1 size={25} />
   },
   {

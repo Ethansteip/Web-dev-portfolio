@@ -19,3 +19,16 @@
     @apply cursor-pointer
   }
 }
+
+.skills-border {
+  border-bottom: 2px solid #7c3aed;
+}
+
+.skills-border-inactive { 
+  border-bottom: 2px solid transparent; /* <- here */
+  transition: border-bottom 0.5s;
+  text-decoration: none; /* I added this for clarity of effect */
+}
+.skills-border-inactive:hover {
+  border-bottom: 2px solid #a78bfa;
+}

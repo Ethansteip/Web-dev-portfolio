@@ -32,8 +32,8 @@ const Skills = () => {
             />
     });
 
-  const activeSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary";
-  const inactiveSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3 hover:border-b-2 border-primary transition duration-300 ease-in-out";
+  const activeSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest mb-3 mt-3 skills-border";
+  const inactiveSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest mb-3 mt-3 skills-border-inactive";
 
   const activateSkill = (string) => {
     setSkillActive(string);
@@ -49,7 +49,7 @@ const Skills = () => {
   return(
     <section className="flex flex-col justify-center items-center w-full px-5 mb-10">
       <h2>Skills</h2>
-        <p className="uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3">These are the technologies I enjoy working with.</p>
+        <p className="uppercase text-sm text-center tracking-widest mb-3 mt-3">These are the technologies I enjoy working with.</p>
 
         {/* Skills card sections */}
         <section className="w-full flex gap-x-5 justify-center">
@@ -61,7 +61,7 @@ const Skills = () => {
           <p 
             className={ skillActive === 'Frameworks & Libraries' ? activeSkillTab : inactiveSkillTab }
             onClick={() => activateSkill('Frameworks & Libraries')}>
-            Frameworks & Libraries
+            Frameworks
           </p>
           <p 
             className={ skillActive === 'Databases' ? activeSkillTab : inactiveSkillTab }
@@ -69,7 +69,7 @@ const Skills = () => {
             Databases
           </p>
         </section>
-        <section className="grid grid-cols-3 gap-2 mt-2">
+        <section className="grid grid-cols-3 gap-2 mt-2 h-36">
           {skillsArray}
         </section>
     </section>

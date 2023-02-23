@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Main from "./Main";
 import Skills from "./Skills";
+import Projects from "./Projects";
 import { FaLinkedinIn, FaGithub, FaRegMoon } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FiSun } from "react-icons/fi";
@@ -17,8 +18,8 @@ const Navbar = (props) => {
       <Image 
           src="/assets/avataaars.png" 
           alt="/" 
-          width="60" 
-          height="60"
+          width="50" 
+          height="50"
         />
       </div>
       <div className="flex gap-x-2">
@@ -51,9 +52,12 @@ const Navbar = (props) => {
         </ul>
       </div>
     </div>
-    {/* Insert Main content here */}
+    {/* Start Main Page Content */}
     <Main />
     <Skills />
+    <Projects />
+    {/* End Main Page Content */}
+
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
