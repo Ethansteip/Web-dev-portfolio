@@ -53,9 +53,11 @@ const Navbar = (props) => {
       </div>
     </div>
     {/* Start Main Page Content */}
-    <Main />
-    <Skills />
-    <Projects />
+    <div className="">
+      <Main />
+      <Skills />
+      <Projects />
+    </div>
     {/* End Main Page Content */}
 
   </div> 
