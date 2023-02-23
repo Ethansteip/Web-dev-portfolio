@@ -4,6 +4,7 @@ import SkillsCard from './SkillsCard';
 import { frameworks, languages, databases } from '../Data/skills_data.js';
 
 const Skills = () => {
+  const [skillActive, setSkillActive] = useState('languages');
 
   const languagesArray = languages.map((language) => {
     return <SkillsCard
@@ -12,6 +13,8 @@ const Skills = () => {
               icon={language.icon}
             />
     });
+  
+  const [skillsArray, setSkillsArray] = useState(languagesArray);
 
   const frameworkArray = frameworks.map((framework) => {
     return <SkillsCard
@@ -29,22 +32,46 @@ const Skills = () => {
             />
     });
 
+  const activeSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary";
+  const inactiveSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3 hover:border-b-2 border-primary transition duration-300 ease-in-out";
+
+  const activateSkill = (string) => {
+    setSkillActive(string);
+    if (string === 'languages') {
+      setSkillsArray(languagesArray);
+    } else if (string === 'Frameworks & Libraries') {
+      setSkillsArray(frameworkArray);
+    } else {
+      setSkillsArray(databaseArray);
+    }
+  }
+
   return(
-    <section className="flex flex-col justify-center items-center w-full h-1/2 px-5">
+    <section className="flex flex-col justify-center items-center w-full px-5 mb-10">
       <h2>Skills</h2>
-      <p className="uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3">These are the technologies I enjoy working with.</p>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Languages</p>
-      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
-        {languagesArray}
-      </div>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Frameworks & Libraries</p>
-      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
-        {frameworkArray}
-      </div>
-      <p className="uppercase text-sm tracking-widest text-gray-600 mb-3 mt-3 border-b-2 border-primary">Database Management</p>
-      <div className='grid grid-cols-5 md:flex fex-wrap md:w-auto md:justify-center gap-x-5 mb-5'>
-        {databaseArray}
-      </div>
+        <p className="uppercase text-sm text-center tracking-widest text-gray-600 mb-3 mt-3">These are the technologies I enjoy working with.</p>
+
+        {/* Skills card sections */}
+        <section className="w-full flex gap-x-5 justify-center">
+          <p 
+            className={ skillActive === 'languages' ? activeSkillTab : inactiveSkillTab }
+            onClick={() => activateSkill('languages')}>
+            Languages
+          </p>
+          <p 
+            className={ skillActive === 'Frameworks & Libraries' ? activeSkillTab : inactiveSkillTab }
+            onClick={() => activateSkill('Frameworks & Libraries')}>
+            Frameworks & Libraries
+          </p>
+          <p 
+            className={ skillActive === 'Databases' ? activeSkillTab : inactiveSkillTab }
+            onClick={() => activateSkill('Databases')}>
+            Databases
+          </p>
+        </section>
+        <section className="grid grid-cols-3 gap-2 mt-2">
+          {skillsArray}
+        </section>
     </section>
   );
 

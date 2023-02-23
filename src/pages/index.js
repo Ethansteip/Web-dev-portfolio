@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const [darkModeState, setDarkModeState] = useState(false);
+  const [darkModeState, setDarkModeState] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkModeState(!darkModeState);

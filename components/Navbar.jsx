@@ -22,7 +22,7 @@ const Navbar = (props) => {
         />
       </div>
       <div className="flex gap-x-2">
-        <button onClick={props.toggleDarkMode}>
+        <button onClick={props.toggleDarkMode} className="md:mr-3">
           { props.darkModeState ? <FaRegMoon size={20}/> : <FiSun size={22}/>}
         </button>
         <div className="flex-none lg:hidden">
