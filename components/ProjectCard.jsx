@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl border">
-      <figure className="w-2/3"><img className="" src={props.cover_image} alt="Album"/></figure>
+      {/* <figure className="w-2/3"><img className="" src={props.cover_image} alt="Album"/></figure> */}
       <div className="card-body">
         <h2 className="card-title">{props.name}</h2>
         <p className="">{props.description}</p>
