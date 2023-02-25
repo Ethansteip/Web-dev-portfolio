@@ -3,10 +3,10 @@ import Link from "next/link";
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
-const Main = () => {
+const Header = () => {
 
   return (
-    <div className="w-full h-1/2 text-center">
+    <div className="w-full h-auto text-center mt-16 mb-16 md:mt-32 md:mb-32">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
           <h1>Hi, I'm <span className="text-primary">Ethan</span></h1>
@@ -30,4 +30,4 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default Header;

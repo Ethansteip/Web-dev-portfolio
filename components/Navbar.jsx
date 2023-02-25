@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Main from "./Main";
+import Header from "./Header";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import { FaLinkedinIn, FaGithub, FaRegMoon } from 'react-icons/fa';
@@ -54,7 +54,7 @@ const Navbar = (props) => {
     </div>
     {/* Start Main Page Content */}
     <div className="">
-      <Main />
+      <Header />
       <Skills />
       <Projects />
     </div>
