@@ -16,7 +16,7 @@ const Navbar = (props) => {
     <div className="w-full navbar bg-base-100 shadow-md"> 
       <div className="flex-1 px-2 mx-2">
       <Image 
-          src="/assets/avataaars.png" 
+          src="./assets/Logo/Portfolio-Logo.svg" 
           alt="/" 
           width="50" 
           height="50"
