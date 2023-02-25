@@ -11,7 +11,7 @@ export const frameworks = [
   },
   {
     id: 2,
-    name: "Next js",
+    name: "Next",
     icon: <SiNextdotjs size={25} />
   },
   {
@@ -39,7 +39,7 @@ export const frameworks = [
 export const languages = [
   {
     id: 1,
-    name: "Javascript",
+    name: "JS",
     icon: <DiJavascript1 size={25} />
   },
   {
