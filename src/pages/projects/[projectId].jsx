@@ -10,7 +10,7 @@ const ProjectDetail = () => {
   const myProject = projects.find(x => x.id === projectId);
 
   return (
-    <h1>Project Details {myProject.name}</h1>
+    <h1>Project Details</h1>
   );
 
 }
