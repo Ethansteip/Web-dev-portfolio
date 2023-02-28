@@ -6,7 +6,8 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
 
   const projectsArray = projects.map((project) => {
-    return <ProjectCard 
+    return <ProjectCard
+            id={project.id}
             key={project.id}
             name={project.name}
             description={project.description}
@@ -22,7 +23,7 @@ const Projects = () => {
       <p className="uppercase text-sm text-center tracking-widest mb-3 mt-3">Here is some of my recent web deveopment work!</p>
 
       {/* Project Cards */}
-      <section className="w-5/6 grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 mt-5">
+      <section className="w-5/6 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
         {projectsArray}
       </section>
     </section>

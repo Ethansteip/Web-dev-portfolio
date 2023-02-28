@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "./Header";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import ContactForm from "./ContactForm";
 import { FaLinkedinIn, FaGithub, FaRegMoon } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FiSun } from "react-icons/fi";
@@ -18,8 +19,8 @@ const Navbar = (props) => {
       <Image 
           src="./assets/Logo/Portfolio-Logo.svg" 
           alt="/" 
-          width="50" 
-          height="50"
+          width="37" 
+          height="37"
         />
       </div>
       <div className="flex gap-x-2">
@@ -53,10 +54,11 @@ const Navbar = (props) => {
       </div>
     </div>
     {/* Start Main Page Content */}
-    <div className="">
+    <div>
       <Header />
       <Skills />
       <Projects />
+      <ContactForm />
     </div>
     {/* End Main Page Content */}
 
