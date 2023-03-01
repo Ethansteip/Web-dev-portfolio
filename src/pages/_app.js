@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import { useState } from 'react';
 import Head from 'next/Head';
 import Footer from 'components/Footer';
-import Navbar2 from 'components/Navbar2';
+import Navbar from 'components/Navbar';
 
 export default function App({ Component, pageProps }) {
 
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar2 toggleDarkMode={toggleDarkMode} darkModeState={darkModeState} />
+      <Navbar toggleDarkMode={toggleDarkMode} darkModeState={darkModeState} />
       <Component {...pageProps} />
       <Footer />
     </main>

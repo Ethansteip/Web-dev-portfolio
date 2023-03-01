@@ -4,7 +4,7 @@ import Image from 'next/Image';
 import { FiSun } from "react-icons/fi";
 import { FaRegMoon } from 'react-icons/fa';
 
-const Navbar2 = (props) => {
+const Navbar = (props) => {
 
   return (
     <div className="navbar bg-base-100">
@@ -15,15 +15,15 @@ const Navbar2 = (props) => {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Homepage</Link>
-            <Link href="/projects/3" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Projects</Link>
-            <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Contact</Link>
+            <Link href="/projects/0" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Project 1</Link>
+            <Link href="/test" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Test Page</Link>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
         {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
         <Image 
-          src="./assets/Logo/Portfolio-Logo.svg" 
+          src="/assets/Logo/Portfolio-Logo.svg" 
           alt="/" 
           width="37" 
           height="37"
@@ -39,4 +39,4 @@ const Navbar2 = (props) => {
 
 }
 
-export default Navbar2;
+export default Navbar;
