@@ -38,7 +38,7 @@
 }
 
 .project-photo-inactive { 
-  border: 2px solid transparent; /* <- here */
+  border: 2px solid rgb(207, 207, 207); /* <- here */
   transition: border 0.5s;
   text-decoration: none; /* I added this for clarity of effect */
 }

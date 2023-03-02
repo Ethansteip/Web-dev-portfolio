@@ -4,6 +4,8 @@
       "id": 1,
       "name": "Codeful",
       "description": "A journaling and progress tracking appllication for developers!",
+      "challenges": "This was a very very challenging project",
+      "video": "Codeful Video Here! <!-- Link -->",
       "technologies": ["React", "Express", "PostgreSQL", "Tailwind"],
       "github_link": "https://github.com/hdewett/codeful",
       "project_photos": ["/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-3.png", "/assets/Project-Images/Codeful/codeful-4.png"]

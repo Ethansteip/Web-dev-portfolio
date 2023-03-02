@@ -7,6 +7,8 @@ export const projects = [
     description: "A journaling and progress tracking appllication for developers!",
     technologies: ["React", "Express", "PostgreSQL", "Tailwind"],
     github_link: "https://github.com/hdewett/codeful",
+    challenges: "This was a very very challenging project",
+    video: "Codeful Video Here! <!-- Link -->",
     project_photos: ["/assets/Project-Images/Codeful/codeful-0.png", "/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-3.png", "/assets/Project-Images/Codeful/codeful-4.png"]
   },
   {

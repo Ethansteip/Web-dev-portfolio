@@ -1,7 +1,7 @@
 import React from 'react';
-//useSWR allows the use of SWR inside function components
 import useSWR from 'swr';
 import PhotoCarousel from 'components/PhotoCarousel';
+import ProjectDescription from 'components/ProjectDescription';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { projects } from '/Data/projects_data.js'
@@ -35,11 +35,31 @@ const ProjectDetail = () => {
     //console.log(projectId);
 
     const images = projectData.projects[0].project_photos;
-    //console.log(images);
+    const name = projectData.projects[0].name;
+    const description = projectData.projects[0].description;
+    const challenges = projectData.projects[0].challenges;
+    const video = projectData.projects[0].video;
+    const technologies = projectData.projects[0].technologies;
+    const githubLink = projectData.projects[0].github_link;
+
 
   return (
-    <section className="w-full h-auto">
-      <PhotoCarousel images={images} />
+    <section className="w-full h-screen">
+      <div className="flex flex-col w-full h-auto">
+        <div>
+          <PhotoCarousel images={images} />
+        </div>
+        <div clasName="w-full">
+          <ProjectDescription
+            name={name}
+            description={description}
+            challenges={challenges}
+            video={video}
+            technologies={technologies}
+            githubLink={githubLink}
+            />
+        </div>
+      </div>
     </section>
   );
 

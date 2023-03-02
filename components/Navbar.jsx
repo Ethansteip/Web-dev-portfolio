@@ -20,7 +20,7 @@ const Navbar = (props) => {
           </ul>
         </div>
       </div>
-      <div className="navbar-center">
+      <div className="navbar-center gap-x-3">
         {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
         <Image 
           src="/assets/Logo/Portfolio-Logo.svg" 
@@ -28,6 +28,7 @@ const Navbar = (props) => {
           width="37" 
           height="37"
         />
+
       </div>
       <div className="navbar-end">
       <button onClick={props.toggleDarkMode} className="md:mr-3">
