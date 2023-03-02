@@ -14,7 +14,7 @@ const inactiveImage = "flex cursor-pointer w-full h-20 project-photo-inactive ro
 
   return (
     <section className="p-10 flex flex-col items-center justify-center">
-      <div className="w-full border-2 rounded-lg p-3 h-auto flex items-center justify-center md:w-[600px] md:h-auto ">
+      <div className="w-full border-2 rounded-lg p-3 h-auto flex items-center justify-center md:w-[600px] md:min-h-[600px] ">
         <Image 
               src={props.images[image]} 
               alt="/" 

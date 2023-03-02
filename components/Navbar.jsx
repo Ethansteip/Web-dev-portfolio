@@ -14,20 +14,20 @@ const Navbar = (props) => {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Homepage</Link>
-            <Link href="/projects/1" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Project 1</Link>
-            <Link href="/projects/2" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Test Page</Link>
+            <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Home</Link>
           </ul>
         </div>
       </div>
       <div className="navbar-center gap-x-3">
         {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
-        <Image 
-          src="/assets/Logo/Portfolio-Logo.svg" 
-          alt="/" 
-          width="37" 
-          height="37"
-        />
+        <Link href="/">
+          <Image 
+            src="/assets/Logo/Portfolio-Logo.svg" 
+            alt="/" 
+            width="37" 
+            height="37"
+          />
+        </Link>
 
       </div>
       <div className="navbar-end">

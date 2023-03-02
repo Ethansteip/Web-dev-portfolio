@@ -55,15 +55,6 @@ const ProjectDetail = (props) => {
         return <h1>Loading...</h1>
     }
 
-    // const images = projectData.projects[0].project_photos;
-    // const name = projectData.projects[0].name;
-    // const description = projectData.projects[0].description;
-    // const challenges = projectData.projects[0].challenges;
-    // const video = projectData.projects[0].video;
-    // const technologies = projectData.projects[0].technologies;
-    // const githubLink = projectData.projects[0].github_link;
-
-
   return (
     <section className="w-full h-screen">
       <div className="flex flex-col w-full h-auto">
