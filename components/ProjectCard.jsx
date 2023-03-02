@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const ProjectCard = (props) => {
 
