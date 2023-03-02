@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/Link';
-import Image from 'next/Image';
+import Link from 'next/link';
+import Image from 'next/image';
 import { FiSun } from "react-icons/fi";
 import { FaRegMoon } from 'react-icons/fa';
 
