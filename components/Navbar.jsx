@@ -15,8 +15,8 @@ const Navbar = (props) => {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Homepage</Link>
-            <Link href="/projects/0" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Project 1</Link>
-            <Link href="/test" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Test Page</Link>
+            <Link href="/projects/1" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Project 1</Link>
+            <Link href="/projects/2" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Test Page</Link>
           </ul>
         </div>
       </div>

@@ -1,62 +1,83 @@
 import React from 'react';
-import useSWR from 'swr';
 import PhotoCarousel from 'components/PhotoCarousel';
 import ProjectDescription from 'components/ProjectDescription';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import path from 'path';
+import { promises as fs } from 'fs';
 import { useRouter } from 'next/router';
-import { projects } from '/Data/projects_data.js'
 
+async function getData() {
+  const filePath = path.join(process.cwd(), 'json', 'data.json');
+  const fileData = await fs.readFile(filePath);
+  const data = JSON.parse(fileData.toString());
+  return data;
+}
 
-//Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
-const fetcher = (url) => fetch(url).then((res) => res.json());
+export const getStaticProps = async (context) => {
+  const itemID = context.params?.projectId;
+  const data = await getData();
+  const foundItem = data.projects.find((project) => itemID == project.id);
 
-const ProjectDetail = () => {
-
-    //Set up SWR to run the fetcher function when calling "/api/staticdata"
-    //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data)
-    const { data, error } = useSWR('/api/staticdata', fetcher);
-    const [projectId, setProjectId] = useState();
-
-    const router = useRouter();;
-
-    useEffect(() => {
-      if (!router.query.projectId) {
-        return;
+    if (!foundItem) {
+      return {
+        props: { hasError: true },
       }
-      setProjectId(Number(router.query.projectId));
-    }, [router.isReady]);
+  }
+  return {
+    props: {
+      projectData: foundItem
+    }
+  }
+}
 
-     //Handle the error state
-    if (error) return <div>Failed to load</div>;
-    //Handle the loading state
-    if (!data) return <div>Loading...</div>;
-    //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
-    const projectData =  JSON.parse(data);
-    //console.log(projectId);
+export const getStaticPaths = async () => {
+  const data = await getData();
+  const pathsWithParams = data.projects.map((project) => ({ params: { projectId: project.id.toString() }}))
 
-    const images = projectData.projects[0].project_photos;
-    const name = projectData.projects[0].name;
-    const description = projectData.projects[0].description;
-    const challenges = projectData.projects[0].challenges;
-    const video = projectData.projects[0].video;
-    const technologies = projectData.projects[0].technologies;
-    const githubLink = projectData.projects[0].github_link;
+  return {
+      paths: pathsWithParams,
+      fallback: true
+  }
+}
+
+
+
+
+const ProjectDetail = (props) => {
+
+    const router = useRouter();
+
+    if (props.hasError) {
+      return <h1>Error - please try another parameter</h1>
+    }
+  
+    if (router.isFallback) {
+        return <h1>Loading...</h1>
+    }
+
+    // const images = projectData.projects[0].project_photos;
+    // const name = projectData.projects[0].name;
+    // const description = projectData.projects[0].description;
+    // const challenges = projectData.projects[0].challenges;
+    // const video = projectData.projects[0].video;
+    // const technologies = projectData.projects[0].technologies;
+    // const githubLink = projectData.projects[0].github_link;
 
 
   return (
     <section className="w-full h-screen">
       <div className="flex flex-col w-full h-auto">
         <div>
-          <PhotoCarousel images={images} />
+          <PhotoCarousel images={props.projectData.project_photos} />
         </div>
-        <div clasName="w-full">
+        <div className="w-full">
           <ProjectDescription
-            name={name}
-            description={description}
-            challenges={challenges}
-            video={video}
-            technologies={technologies}
-            githubLink={githubLink}
+            name={props.projectData.name}
+            description={props.projectData.description}
+            challenges={props.projectData.challenges}
+            video={props.projectData.video}
+            technologies={props.projectData.technologies}
+            githubLink={props.projectData.github_link}
             />
         </div>
       </div>

@@ -5,9 +5,7 @@ const ProjectDescription = (props) => {
   const [descriptionActive, setdescriptionActive] = useState('Overview');
   const [content, setContent] = useState(props.description);
 
-  console.log("Description: ", props.video);
-
-  const activeSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest mb-3 mt-3 skills-border";
+  const activeSkillTab = "cursor-pointer mb-2 pb-1 uppercase text-sm text-center tracking-widest mb-3 mt-3 skills-border";
   const inactiveSkillTab = "cursor-pointer mb-2 uppercase text-sm text-center tracking-widest mb-3 mt-3 skills-border-inactive";
 
   const activateDescription = (string) => {
