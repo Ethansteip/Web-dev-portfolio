@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Link from "next/Link";
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 

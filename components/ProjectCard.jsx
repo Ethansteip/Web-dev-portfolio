@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
-import Link from 'next/link';
+import Link from 'next/Link';
 
 const ProjectCard = (props) => {
 
@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
             <Link href={props.github_link}>
               <FaGithub size={35}/>
             </Link>
-            <Link className="hidden" href={"/projects/" + props.id}>
+            <Link className="" href={"/projects/" + props.id}>
               <FaArrowRight size={35}/>
             </Link>
         </div>

@@ -7,7 +7,9 @@ export const projects = [
     description: "A journaling and progress tracking appllication for developers!",
     technologies: ["React", "Express", "PostgreSQL", "Tailwind"],
     github_link: "https://github.com/hdewett/codeful",
-    cover_image: ""
+    challenges: "This was a very very challenging project",
+    video: "Codeful Video Here! <!-- Link -->",
+    project_photos: ["/assets/Project-Images/Codeful/codeful-0.png", "/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-3.png", "/assets/Project-Images/Codeful/codeful-4.png"]
   },
   {
     id: 2,
@@ -15,7 +17,7 @@ export const projects = [
     description: "A React application that allows students to easily book, edit, and cancel interviews with their education mentors.",
     technologies: ["React", "Javascript", "Axios", "Jest", "Cypress"],
     github_link: "https://github.com/Ethansteip/Student-scheduling-app",
-    cover_image: ""
+    project_photos: []
   },
   {
     id: 3,
@@ -23,7 +25,7 @@ export const projects = [
     description: "Jungle is a plant themed E-commerce web application built with Ruby on Rails, Bootstrap CSS, PostgreSQL, and Stripe.",
     technologies: ["Ruby", "Rails", "PostgreSQL", "Bootstrap"],
     github_link: "https://github.com/Ethansteip/Jungle-ecommerce-store",
-    cover_image: ""
+    project_photos: []
   },
   {
     id: 4,
@@ -31,7 +33,7 @@ export const projects = [
     description: "A communal marketplace application that allows users to post, buy, favourite and sell items online",
     technologies: ["Javascript", "Node", "PostgreSQL", "Express"],
     github_link: "https://github.com/Ethansteip/Buy-And-Sell-Marketplace",
-    cover_image: "./assets/Project Images/Buy&Sell-1.jpeg"
+    project_photos: []
   },
   {
     id: 5,
@@ -39,7 +41,7 @@ export const projects = [
     description: "A full stack web app built with Node and Express that allows users to shorten long URLs.",
     technologies: ["Javascript", "Node", "Express"],
     github_link: "https://github.com/Ethansteip/tinnyapp",
-    cover_image: "./assets/Project Images/TinyApp-1.png"
+    project_photos: []
   },
   {
     id: 6,
@@ -47,6 +49,6 @@ export const projects = [
     description: "A single page and minimal Twitter clone",
     technologies: ["Javascript", "jquery", "CSS"],
     github_link: "https://github.com/Ethansteip/tweeter",
-    cover_image: "./assets/Project Images/Tweeter-1.png"
+    project_photos: []
   },
 ]

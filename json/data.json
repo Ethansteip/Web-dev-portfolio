@@ -2,13 +2,13 @@
   "projects": [
     {
       "id": 1,
-      "name": "Codeful App",
+      "name": "Codeful",
       "description": "A journaling and progress tracking appllication for developers!",
       "challenges": "This was a very very challenging project",
       "video": "Codeful Video Here! <!-- Link -->",
       "technologies": ["React", "Express", "PostgreSQL", "Tailwind"],
       "github_link": "https://github.com/hdewett/codeful",
-      "project_photos": ["/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-3.png", "/assets/Project-Images/Codeful/codeful-4.png"]
+      "project_photos": ["/assets/Project-Images/Codeful/codeful-0.png", "/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-4.png"]
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "A React application that allows students to easily book, edit, and cancel interviews with their education mentors.",
       "technologies": ["React", "Javascript", "Axios", "Jest", "Cypress"],
       "github_link": "https://github.com/Ethansteip/Student-scheduling-app",
-      "project_photos": []
+      "project_photos": ["/assets/Project-Images/Scheduler/scheduler-0.png", "/assets/Project-Images/Scheduler/scheduler-1.png", "/assets/Project-Images/Scheduler/scheduler-2.png"]
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "description": "Jungle is a plant themed E-commerce web application built with Ruby on Rails, Bootstrap CSS, PostgreSQL, and Stripe.",
       "technologies": ["Ruby", "Rails", "PostgreSQL", "Bootstrap"],
       "github_link": "https://github.com/Ethansteip/Jungle-ecommerce-store",
-      "project_photos": []
+      "project_photos": ["/assets/Project-Images/Jungle/Jungle-1.png", "/assets/Project-Images/Jungle/Jungle-0.png", "/assets/Project-Images/Jungle/Jungle-2.png", "/assets/Project-Images/Jungle/Jungle-3.png"]
     },
     {
       "id": 4,
@@ -40,7 +40,7 @@
       "description": "A full stack web app built with Node and Express that allows users to shorten long URLs.",
       "technologies": ["Javascript", "Node", "Express"],
       "github_link": "https://github.com/Ethansteip/tinnyapp",
-      "project_photos": []
+      "project_photos": ["/assets/Project-Images/Tiny-App/Tiny-App-0.png", "/assets/Project-Images/Tiny-App/Tiny-App-1.png"]
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
       "description": "A single page and minimal Twitter clone",
       "technologies": ["Javascript", "jquery", "CSS"],
       "github_link": "https://github.com/Ethansteip/tweeter",
-      "project_photos": []
+      "project_photos": ["/assets/Project-Images/Tweeter/Tweeter-0.png", "/assets/Project-Images/Tweeter/Tweeter-1.png", "/assets/Project-Images/Tweeter/Tweeter-2.png"]
     }
   ]
 }
