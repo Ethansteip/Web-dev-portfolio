@@ -31,7 +31,7 @@ const Navbar = (props) => {
 
       </div>
       <div className="navbar-end">
-      <button onClick={props.toggleDarkMode} className="md:mr-3">
+      <button onClick={props.toggleDarkMode} className="mr-5">
         { props.darkModeState ? <FaRegMoon size={20}/> : <FiSun size={22}/>}
       </button>
       </div>

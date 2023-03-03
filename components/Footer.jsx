@@ -11,7 +11,7 @@ const Footer = () => {
           width="37" 
           height="37"
         />       
-        <p>Ethan Steip - Copyright © 2023 - All right reserved</p>
+        <p>Copyright © 2023 - Ethan Steip</p>
       </div> 
     </footer>
   );

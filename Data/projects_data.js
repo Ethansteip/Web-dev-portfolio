@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 1,
     name: "Codeful",
-    description: "A journaling and progress tracking appllication for developers!",
+    description: "A journaling and progress tracking application for web developers!",
     technologies: ["React", "Express", "PostgreSQL", "Tailwind"],
     github_link: "https://github.com/hdewett/codeful",
     challenges: "This was a very very challenging project",
