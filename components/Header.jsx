@@ -14,13 +14,13 @@ const Header = () => {
         </div>
         <div>
           <ul className="flex justify-start gap-x-3 mt-3">
-            <Link href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
+            <a target="_blank" href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
               <FaLinkedinIn className="" size={25}/>
-            </Link>
-            <Link href="https://github.com/Ethansteip" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
+            </a>
+            <a target="_blank" href="https://github.com/Ethansteip" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
               <FaGithub size={25}/>
-            </Link>
-            <Link href="/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
+            </a>
+            <Link href="#contact-form" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
               <HiOutlineMail size={25}/>
             </Link>
           </ul>
