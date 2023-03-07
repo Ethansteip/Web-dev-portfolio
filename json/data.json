@@ -6,7 +6,7 @@
       "description": "A journaling and progress tracking application for web developers!",
       "project_description_html" : "<p>Codeful was developed as a way to give beginner web-developers a better way to track their progress and reflect on their daily studies.<br><br>The app allows users to submit journal entries containing text and code snippets that they can then view, edit, delete or share with friends.</p><br><p>Some other notable features include: </p><br><ul><li>&#x2022 A statistics page - total entries, total hours studied, words typed, languages most frequently referenced.</li><br><li>&#x2022 A public facing user feed, where users can share their journal entries with each other.</li><br><li>&#x2022 Code snippets included in journal entries can be written in over 10 languages and include syntax highlighting!</li><br><li>&#x2022 Dark mode 🦇</li></ul><br><p>This project was built with my awesome colleagues, Nawal Abdi and Hilora Dewett!",
       "project_tech_html" : "<p>Codeful ws built using:</p><br /><ul><li>&#x2022 Javascript + Node.js</li><br /><li>&#x2022 React + React Router</li><br /><li>&#x2022 Express</li><br /><li>&#x2022 PostgreSQL</li><br /><li>&#x2022 Tailwind/Daisy UI</li><br /><li>&#x2022 Google Charts</li><br /><li>&#x2022 Tiny MCE - text editor</li><br /></ul>",
-      "project_challenges_html" : "<p>Building Codeful was a lot of fun but it also came with some of its challenges, including:</p><br><ul><li></li>&#x2022 Finding a way to count the total words a user has typed in all of their cumulative journal entries. Total words was a stat that we really wanted to include in our stat’s page, and we couldn’t find an easy way to calculate it. The text editor we used (Tiny MCE) stores all of the text area input as HTML, and actually had a built-in method for calculating total words, but only on a per entry basis. We ended up using a custom regex expression to capture the word count of each journal entry, and summing the total count across all entries to give us the figure we wanted.</ul>",
+      "project_challenges_html" : "<p>Building Codeful was a lot of fun but it also came with its challenges, including:</p><br><ul><li>&#x2022 Finding a way to count the total words a user has typed in all of their cumulative journal entries. Total words was a stat that we really wanted to include in our stat’s page, and we couldn’t find an easy way to calculate it. The text editor we used (Tiny MCE) stores all of the text area input as HTML, and actually had a built-in method for calculating total words, but only on a per entry basis. We ended up using a custom regex expression to capture the word count of each journal entry, and summing the total count across all entries to give us the figure we wanted.</li></ul>",
       "challenges": "This was a very very challenging project",
       "video": "Codeful Video Here! <!-- Link -->",
       "technologies": ["React", "Express", "PostgreSQL", "Tailwind"],
@@ -17,6 +17,9 @@
       "id": 2,
       "name": "Student Scheduling App",
       "description": "A React application that allows students to easily book, edit, and cancel interviews with their education mentors.",
+      "project_description_html" : "<p>My Student Scheduling App is a React application that allows students to easily schedule and manage appointments with their mentors and view availability in real-time. Students have the option to book an appointment during any weekday as long as there is availability. Students are also able to update the appointment information, choose their interviewer or cancel the appointment if need be.</p><br><p>The app was built with React + Axios + Webpack and uses a <a href=`https://github.com/lighthouse-labs/scheduler-api`>third-party Express + Postgres backend</a> to populate the app with test data. I've created a custom UseApplicationData hook to manage the applications state, and the app has significant test coverage using jest.</p>",
+      "project_tech_html" : "<p>The Student Scheduling App was built with:</p><br /><ul><li>&#x2022 Javascript + Node.js</li><br /><li>&#x2022 React + Functional Components</li><br /><li>&#x2022 Webpack</li><br /><li>&#x2022 CSS3</li><br /><li>&#x2022 Jest</li><br /><li>&#x2022 Cypress</li><br /><li>&#x2022 Storybook</li><br /></ul>",
+      "project_challenges_html" : "",
       "technologies": ["React", "Javascript", "Axios", "Jest", "Cypress"],
       "github_link": "https://github.com/Ethansteip/Student-scheduling-app",
       "project_photos": ["/assets/Project-Images/Scheduler/scheduler-0.png", "/assets/Project-Images/Scheduler/scheduler-1.png", "/assets/Project-Images/Scheduler/scheduler-2.png"]
@@ -25,6 +28,9 @@
       "id": 3,
       "name": "Jungle - Ecommerce",
       "description": "Jungle is a plant themed E-commerce web application built with Ruby on Rails, Bootstrap CSS, PostgreSQL, and Stripe.",
+      "project_description_html" : "<p>Jungle - Ecommerce is a plant themed E-commerce web application built with Ruby on Rails, Bootstrap CSS, PostgreSQL, and Stripe. The application covers some of the most common features you would expect from an e-commerce site, including user authentication, product and category management handled through a password protected admin panel, along with a checkout powered by Stripe.</p>",
+      "project_tech_html" : "<p>Jungle - Ecommerce was built with:</p><br /><ul><li>&#x2022 Ruby on Rails 6.1</li><br /><li>&#x2022 Bootstrap 5</li><br /><li>&#x2022 PostgresSQL 9.x</li><br /><li>&#x2022 Stripe</li><br /><li>&#x2022 Rspec</li><br /><li>&#x2022 Cypress</li><br /><br /></ul>",
+      "project_challenges_html" : "",
       "technologies": ["Ruby", "Rails", "PostgreSQL", "Bootstrap"],
       "github_link": "https://github.com/Ethansteip/Jungle-ecommerce-store",
       "project_photos": ["/assets/Project-Images/Jungle/Jungle-1.png", "/assets/Project-Images/Jungle/Jungle-0.png", "/assets/Project-Images/Jungle/Jungle-2.png", "/assets/Project-Images/Jungle/Jungle-3.png"]
@@ -41,6 +47,9 @@
       "id": 5,
       "name": "TinyApp",
       "description": "A full stack web app built with Node and Express that allows users to shorten long URLs.",
+      "project_description_html" : "<p>TinyApp was built to give you the power to keep your URLs short and succint. This tool is perfect for transforming long and difficult to read URLs down to a 6 digit, alphanumeric string, allowing you to embedd them in your own prjects, blogs or tweets!</p>",
+      "project_tech_html" : "<p>TinyApp was built with:</p><br /><ul><li>&#x2022 Node.js</li><br /><li>&#x2022 Express</li><br /><li>&#x2022 Express - Cookie Session (for user auth.)</li><br /><li>&#x2022 Bcrypt Password Hashing</li><br /><li>&#x2022 Embedded Javascript Templates</li><br /><li>&#x2022 Bootstrap CSS</li></ul>",
+      "project_challenges_html" : "",
       "technologies": ["Javascript", "Node", "Express"],
       "github_link": "https://github.com/Ethansteip/tinnyapp",
       "project_photos": ["/assets/Project-Images/Tiny-App/Tiny-App-0.png", "/assets/Project-Images/Tiny-App/Tiny-App-1.png"]
