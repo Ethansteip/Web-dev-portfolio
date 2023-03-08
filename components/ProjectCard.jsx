@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
         {/* <figure className="w-2/3"><img className="" src={props.cover_image} alt="Album"/></figure> */}
         <div className="card-body">
           <h2 className="card-title">{props.name}</h2>
-          <p className="text-sm md:text-md">{props.description}</p>
+          <p className="">{props.description}</p>
           <div className="card-actions justify-end gap-x-4 mt-2">
               <Link href={props.github_link}>
                 <FaGithub size={35}/>
