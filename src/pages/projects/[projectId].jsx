@@ -56,13 +56,13 @@ const ProjectDetail = (props) => {
     }
 
   return (
-    <section className="w-full max-w-[1240px] h-auto mb-10">
-      <div className="flex flex-col md:flex-row w-full h-auto md:mt-8">
+    <section className="w-screen flex justify-center h-auto md:h-screen mb-10">
+      <div className="flex flex-col max-w-[1240px] md:flex-row w-full h-auto md:mt-8">
         <div className="flex flex-col md:hidden text-center mt-3 gap-y-2 px-5">
           <h1 className="text-2xl">{props.projectData.name}</h1>
           <p className="text-xs">{props.projectData.description}</p>
         </div>
-        <div>
+        <div className=''>
           <PhotoCarousel images={props.projectData.project_photos} />
         </div>
         <div className="w-full mt-5 md:mt-0">
