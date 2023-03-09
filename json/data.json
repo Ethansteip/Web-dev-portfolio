@@ -66,7 +66,7 @@
       "project_challenges_html" : "<p>Some of the challenges I encountered when developing Tweeter included:</p><br><ul><li>&#x2022 Calculating the tweet character count threshold to ensure users didn’t surpass 140 characters. I ended up using jQuery's built-in .val() method to capture the state of the text input, then used the length of the text-input value to update the counter and perform any validation if needed.</li></ul>",
       "technologies": ["Javascript", "jquery", "CSS"],
       "github_link": "https://github.com/Ethansteip/tweeter",
-      "project_photos": ["/assets/Project-Images/Tweeter/Tweeter-0.png", "/assets/Project-Images/Tweeter/Tweeter-1.png", "/assets/Project-Images/Tweeter/Tweeter-2.png"]
+      "project_photos": ["/assets/Project-Images/Tweeter/Tweeter-0-final.png", "/assets/Project-Images/Tweeter/Tweeter-1-final.png", "/assets/Project-Images/Tweeter/Tweeter-2-final.png", "/assets/Project-Images/Tweeter/Tweeter-3-final.png", "/assets/Project-Images/Tweeter/Tweeter-4-final.png"]
     }
   ]
 }
