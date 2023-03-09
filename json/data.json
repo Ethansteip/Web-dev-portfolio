@@ -11,7 +11,7 @@
       "video": "Codeful Video Here! <!-- Link -->",
       "technologies": ["React", "Express", "PostgreSQL", "Tailwind"],
       "github_link": "https://github.com/hdewett/codeful",
-      "project_photos": ["/assets/Project-Images/Codeful/codeful-0.png", "/assets/Project-Images/Codeful/codeful-1.png", "/assets/Project-Images/Codeful/codeful-2.png", "/assets/Project-Images/Codeful/codeful-4.png"]
+      "project_photos": ["/assets/Project-Images/Codeful/codeful-0.png", "/assets/Project-Images/Codeful/codeful-1-final.png", "/assets/Project-Images/Codeful/Codeful-2-final.png", "/assets/Project-Images/Codeful/Codeful-3-final.png", "/assets/Project-Images/Codeful/Codeful-4-final.png", "/assets/Project-Images/Codeful/Codeful-5-final.png"]
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "project_challenges_html" : "<p>Some of the challenges I encountered when developing the Student Scheduling App included: </p><br><ul><li>&#x2022 I found myself re-using a lot of the same data logic and api calls between components, and not following DRY principals. I ended up moving all of the data logic into a custom React hook called useApplicationData.js that I was then able to import into App.js and use when necessary, which helped clean things up quite a bit!</li><br><li>&#x2022 Managing the state of the appointment card which would render a different component based on if the user was creating/viewing/updating/deleting an appointment. I found that creating another custom hook called useVisualMode.js to handle the appointment card state allowed for a nice user experience and would track the “history” of the component, so a user could move back and forth between states pretty seamlessly.</li></ul>",
       "technologies": ["React", "Javascript", "Axios", "Jest", "Cypress"],
       "github_link": "https://github.com/Ethansteip/Student-scheduling-app",
-      "project_photos": ["/assets/Project-Images/Scheduler/scheduler-0.png", "/assets/Project-Images/Scheduler/scheduler-1.png", "/assets/Project-Images/Scheduler/scheduler-2.png"]
+      "project_photos": ["/assets/Project-Images/Scheduler/Scheduler-0-final.png", "/assets/Project-Images/Scheduler/Scheduler-1-final.png", "/assets/Project-Images/Scheduler/Scheduler-2-final.png", "/assets/Project-Images/Scheduler/Scheduler-3-final.png", "/assets/Project-Images/Scheduler/Scheduler-4-final.png"]
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "project_challenges_html" : "<p>Being my first time using Rails, a lot of the challenge came down to going through lots and lots of documentation! A few features I did struggle with included:</p><br><ul><li>&#x2022 User authentication edge cases that came up when I was building out my test cases with Rspec. I ended up having to create a few methods in my User model to strip any leading and trailing whitespace, and downcase emails before they were validated. Also adding in validation for password length.</li><br><li>&#x2022 Testing in general with Rspec required the most amount of effort for me. I tested both my user and product models. I found that using “before(:each) do” to set my product or user attributes at the top of each file was a huge time saver and cut down on the amount of repetition in my test files.</li></ul>",
       "technologies": ["Ruby", "Rails", "PostgreSQL", "Bootstrap"],
       "github_link": "https://github.com/Ethansteip/Jungle-ecommerce-store",
-      "project_photos": ["/assets/Project-Images/Jungle/Jungle-1.png", "/assets/Project-Images/Jungle/Jungle-0.png", "/assets/Project-Images/Jungle/Jungle-2.png", "/assets/Project-Images/Jungle/Jungle-3.png"]
+      "project_photos": ["/assets/Project-Images/Jungle/Jungle-0-final.png", "/assets/Project-Images/Jungle/Jungle-1-final.png", "/assets/Project-Images/Jungle/Jungle-2-final.png", "/assets/Project-Images/Jungle/Jungle-3-final.png", "/assets/Project-Images/Jungle/Jungle-4-final.png"]
     },
     {
       "id": 4,
@@ -44,7 +44,7 @@
       "project_challenges_html" : "<p>Some of the challenges we encountered while developing our Buy & Sell market place included:</p><br><ul><li>&#x2022 Setting up filters on our featured products page to sort items by price. Since we built the app using a RESTful api, we opted to create two routes for the filters (/highest, /lowest) that would retrieve the product information in the correct order from the db. The GET request to each of these routes were requested when the user toggled a drop down-menu item, and the returned values filled out the product page template, which ended up working well for our application!</li></ul>",
       "technologies": ["Javascript", "Node", "PostgreSQL", "Express"],
       "github_link": "https://github.com/Ethansteip/Buy-And-Sell-Marketplace",
-      "project_photos": []
+      "project_photos": ["/assets/Project-Images/Marketplace/Marketplace-0-final.png", "/assets/Project-Images/Marketplace/Marketplace-1-final.png", "/assets/Project-Images/Marketplace/Marketplace-2-final.png", "/assets/Project-Images/Marketplace/Marketplace-3-final.png", "/assets/Project-Images/Marketplace/Marketplace-4-final.png"]
     },
     {
       "id": 5,

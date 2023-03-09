@@ -73,6 +73,18 @@ const inactiveImage = "flex cursor-pointer w-full h-20 project-photo-inactive ro
             height="1000"
           />
         </div>
+        <div 
+          className={image === 4 ? activeImage : inactiveImage}
+          onClick={() => updateImage(4)}
+          >
+          <Image 
+            src={props.images[4]}  
+            alt="/" 
+            className='object-contain w-full h-auto p-1'
+            width="1000" 
+            height="1000"
+          />
+        </div>
       </div>
     </section>
   );
