@@ -37,14 +37,6 @@ export const projects = [
   },
   {
     id: 5,
-    name: "TinyApp",
-    description: "A full stack web app built with Node and Express that allows users to shorten long URLs.",
-    technologies: ["Javascript", "Node", "Express"],
-    github_link: "https://github.com/Ethansteip/tinnyapp",
-    project_photos: []
-  },
-  {
-    id: 6,
     name: "Tweeter",
     description: "A single page and minimal Twitter clone",
     technologies: ["Javascript", "jquery", "CSS"],

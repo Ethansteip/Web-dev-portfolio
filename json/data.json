@@ -48,17 +48,6 @@
     },
     {
       "id": 5,
-      "name": "TinyApp",
-      "description": "A full stack web app built with Node and Express that allows users to shorten long URLs.",
-      "project_description_html" : "<p>TinyApp was built to give you the power to keep your URLs short and succinct. This tool is perfect for transforming long and difficult to read URLs down to a 6 digit, alphanumeric string, allowing you to embed them in your own projects, blogs or tweets!</p><br><p>Some other notable features of Tiny App include:</p><br><ul><li>&#x2022 User auth and password hashing</li><br><li>&#x2022 Custom Algorithm to build short URL ids.</li><br><li>&#x2022 Ability to create, view, update and delete your shortened URLs</li></ul>",
-      "project_tech_html" : "<p>TinyApp was built with:</p><br><ul><li>&#x2022 Node.js</li><br><li>&#x2022 Express</li><br /><li>&#x2022 Express - Cookie Session (for user auth.)</li><br /><li>&#x2022 Bcrypt Password Hashing</li><br /><li>&#x2022 Embedded Javascript Templates</li><br /><li>&#x2022 Bootstrap CSS</li></ul>",
-      "project_challenges_html" : "<p>Some of the challenges I encountered when developing TinyApp included: </p><br><ul><li>&#x2022 Handling some of the different edge cases of validating user actions like deleting or editing a url. A user should only be able to delete or update a url if they were logged in, and if the url belonged to their account. I ended up building some helper functions that I used inside my delete and update routes to help validate these actions.</li><br><li>&#x2022 Coming up with a function that would help me generate a 6 digit alphanumeric string to use as the shortened URL. I ended up building a function that used Math.random() to pick each of the 6 characters from a string of upper/lower case letters and the numbers 0-9. This was done inside a for loop that would ultimately spit out a 6 digit code.</li></ul>",
-      "technologies": ["Javascript", "Node", "Express"],
-      "github_link": "https://github.com/Ethansteip/tinnyapp",
-      "project_photos": ["/assets/Project-Images/Tiny-App/Tiny-App-0.png", "/assets/Project-Images/Tiny-App/Tiny-App-1.png"]
-    },
-    {
-      "id": 6,
       "name": "Tweeter",
       "description": "A single page and minimal Twitter clone",
       "project_description_html" : "<p>Introducing Tweeter, a single page application that allows users to post their thoughts and feelings to an online forum and is guaranteed to come without the ramblings of Mr.Musk! Tweeter showcases a responsive layout so it'll look good on all your devices and leverages Ajax and jQuery for a seamless user experience.</p><br><p>Some other notable features include:</p><br><ul><li>&#x2022 140 max character count on tweets.</li><br><li>&#x2022 Character counter updates in real-time as you type.</li><br><li>&#x2022 Character count validation. Will let a user know if they are using too many characters.</li></ul>",
