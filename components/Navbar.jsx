@@ -15,6 +15,7 @@ const Navbar = (props) => {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Home</Link>
+            <a target="_blank" href="https://resume.creddle.io/resume/39rfhusw3yx" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Resume</a>
           </ul>
         </div>
       </div>
@@ -30,7 +31,9 @@ const Navbar = (props) => {
         </Link>
 
       </div>
-      <div className="navbar-end">
+
+      <div className="navbar-end flex gap-x-5">
+      <a target="_blank" href="https://resume.creddle.io/resume/39rfhusw3yx" className="hidden md:flex uppercase text-sm text-center tracking-widest">Resume</a>
       <button onClick={props.toggleDarkMode} className="mr-5">
         { props.darkModeState ? <FaRegMoon size={20}/> : <FiSun size={22}/>}
       </button>
