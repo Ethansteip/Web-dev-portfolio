@@ -23,7 +23,7 @@ const Projects = () => {
       <p className="uppercase text-sm text-center tracking-widest mb-3 mt-3">Here is some of my recent web deveopment work!</p>
 
       {/* Project Cards */}
-      <section className="w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+      <section className="w-5/6 md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
         {projectsArray}
       </section>
     </section>

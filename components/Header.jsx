@@ -9,7 +9,7 @@ const Header = () => {
     <div className="w-full h-auto text-center mt-16 mb-16 md:mt-32 md:mb-32">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
-          <h1>Hi, I'm <span className="text-primary">Ethan</span></h1>
+          <h1 className="">Hi, I'm <span className="text-primary">Ethan</span></h1>
           <p className="uppercase text-xs md:text-sm tracking-widest mb-3 mt-3">Solutions driven ecommerce manager, recent bootcamp graduate<br></br>and full-stack web developer.</p>
         </div>
         <div>
