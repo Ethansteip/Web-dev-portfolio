@@ -67,11 +67,11 @@ export const languages = [
     name: "PHP",
     icon: <DiPhp size={25} />
   },
-  {
-    id: 7,
-    name: "Python",
-    icon: <DiPython size={25} />
-  },
+  // {
+  //   id: 7,
+  //   name: "Python",
+  //   icon: <DiPython size={25} />
+  // },
 ];
 
 export const databases = [
