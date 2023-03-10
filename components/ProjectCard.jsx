@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
+import TechBadge from './TechBadge';
 
 const ProjectCard = (props) => {
+
+  const techBadgeArray = props.technologies.map((tech) => {
+    return <TechBadge
+              tech={tech}
+          />
+  })
 
   return (
     <Link href={"/projects/" + props.id }>

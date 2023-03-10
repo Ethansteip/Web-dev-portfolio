@@ -39,7 +39,7 @@ export const projects = [
     id: 5,
     name: "Tweeter",
     description: "A single page and minimal Twitter clone",
-    technologies: ["Javascript", "jquery", "CSS"],
+    technologies: ["Javascript", "jquery", "Ajax", "CSS"],
     github_link: "https://github.com/Ethansteip/tweeter",
     project_photos: []
   },
