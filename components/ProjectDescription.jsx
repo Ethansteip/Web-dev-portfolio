@@ -23,7 +23,7 @@ const ProjectDescription = (props) => {
   return(
     <section className="flex flex-col justify-center items-center w-full px-5 mb-10">
       <h2 className="hidden md:flex text-center">{props.name}</h2>
-      <a href={props.github_link} target="_blank" className="flex items-center justify-center gap-x-2 w-1/2 rounded-full mt-3 px-3 py-2 bg-primary text-white">
+      <a href={props.github_link} target="_blank" className="flex items-center justify-center gap-x-2 w-1/2 rounded-full my-3 px-3 py-2 bg-primary text-white">
         View Code
         <FaGithub size={20}/>
       </a>
