@@ -70,7 +70,7 @@ const ProjectDetail = (props) => {
             name={props.projectData.name}
             description={props.projectData.description}
             technologies={props.projectData.technologies}
-            githubLink={props.projectData.github_link}
+            github_link={props.projectData.github_link}
             project_description_html={props.projectData.project_description_html}
             project_tech_html={props.projectData.project_tech_html}
             project_challenges_html={props.projectData.project_challenges_html}
