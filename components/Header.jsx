@@ -10,7 +10,7 @@ const Header = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
           <h1 className="">Hi, I'm <span className="text-primary">Ethan</span></h1>
-          <p className="uppercase text-xs md:text-sm tracking-widest mb-3 mt-3">Solutions driven ecommerce manager, recent bootcamp graduate<br></br>and full-stack web developer.</p>
+          <p className="uppercase text-xs md:text-sm tracking-widest mb-3 mt-3">Full-Stack Web Developer,<br></br>& E-commerce operations specialist</p>
         </div>
         <div>
           <ul className="flex justify-start gap-x-3 mt-3">
