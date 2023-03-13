@@ -13,7 +13,7 @@ const Projects = () => {
             description={project.description}
             technologies={project.technologies}
             github_link={project.github_link}
-            cover_image={project.cover_image}
+            project_photos={project.project_photos}
             />
   })
   
@@ -23,7 +23,7 @@ const Projects = () => {
       <p className="uppercase text-sm text-center tracking-widest mb-3 mt-3">Here is some of my recent web deveopment work!</p>
 
       {/* Project Cards */}
-      <section className="w-5/6 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 ">
+      <section className="w-5/6 lg:4/5 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 justify-items-center">
         {projectsArray}
       </section>
     </section>

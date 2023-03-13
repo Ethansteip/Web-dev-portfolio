@@ -5,27 +5,29 @@ import TechBadge from './TechBadge';
 
 const ProjectCard = (props) => {
 
-  const techBadgeArray = props.technologies.map((tech) => {
+  const badgeArray = props.technologies.map((tech) => {
     return <TechBadge
-              tech={tech}
-          />
+            tech={tech}
+            />
   })
 
   return (
-    <Link href={"/projects/" + props.id }>
-      <div className="rounded-lg cursor-pointer lg:card-side bg-base-100 shadow border hover:shadow-lg hover:shadow-indigo-500/50 transition duration-200">
-        {/* <figure className="w-2/3"><img className="" src={props.cover_image} alt="Album"/></figure> */}
+    <div className="carousel-item">
+    <Link href={"/projects/" + props.id}>
+      <div className="card w-full md:w-full max-w-[600px] h-[400px] md:h-[500px] bg-base-100 border shadow hover:shadow-lg hover:shadow-indigo-500/50 cursor-pointer transition duration-200">
+        <figure className=""><img className="object-fit" src={props.project_photos[0]} alt="Shoes" /></figure>
         <div className="card-body">
-          <h2 className="card-title">{props.name}</h2>
-          <p className="">{props.description}</p>
-          <div className="card-actions justify-end gap-x-4 mt-2">
-              <a target="_blank" href={props.github_link}>
-                <FaGithub size={35}/>
-              </a>
+          <h2 className="card-title">
+            {props.name}
+          </h2>
+          <p className="text-sm md:text-md">{props.description}</p>
+          <div className="card-actions justify-end mt-2">
+            {badgeArray}
           </div>
         </div>
       </div>
-      </Link>
+    </Link>
+    </div>
   );
 
 }
