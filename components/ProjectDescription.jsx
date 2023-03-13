@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 const ProjectDescription = (props) => {
   const [descriptionActive, setdescriptionActive] = useState('Overview');
@@ -22,6 +23,10 @@ const ProjectDescription = (props) => {
   return(
     <section className="flex flex-col justify-center items-center w-full px-5 mb-10">
       <h2 className="hidden md:flex text-center">{props.name}</h2>
+      <a href={props.github_link} target="_blank" className="flex items-center justify-center gap-x-2 w-1/2 rounded-full mt-3 px-3 py-2 bg-primary text-white">
+        View Code
+        <FaGithub size={20}/>
+      </a>
 
         {/* Skills card sections */}
         <section className="w-full flex gap-x-5 justify-center">
