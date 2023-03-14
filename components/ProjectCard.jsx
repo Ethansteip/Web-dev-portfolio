@@ -7,6 +7,7 @@ const ProjectCard = (props) => {
 
   const badgeArray = props.technologies.map((tech) => {
     return <TechBadge
+            key={tech}
             tech={tech}
             />
   })
