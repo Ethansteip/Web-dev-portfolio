@@ -15,14 +15,22 @@ const inactiveImage = "flex cursor-pointer w-full h-20 project-photo-inactive ro
   return (
     <section className="px-10 flex flex-col items-center justify-center">
       <div className="w-full rounded-lg p-3 h-[250px] flex items-end justify-center md:w-[600px] md:min-h-[475px] ">
-        <Image 
-              src={props.images[image]} 
-              alt="/" 
-              className='object-contain w-full h-auto shadow-2xl shadow-indigo-500/50 rounded'
-              width="1000" 
-              height="1000"
-              priority={true}
-            />
+        {/* <Image 
+          src={props.images[image]} 
+          alt="/" 
+          className='object-contain w-full h-auto shadow-2xl shadow-indigo-500/50 rounded'
+          width="1000" 
+          height="1000"
+          priority={true}
+        /> */}
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/i0M8Io_Ua1Q" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
       </div>
       <div className="w-full grid grid-cols-3 md:flex md:w-auto justify-between items-center gap-2 mt-3">
         <div 
@@ -36,6 +44,19 @@ const inactiveImage = "flex cursor-pointer w-full h-20 project-photo-inactive ro
             width="1000" 
             height="1000"
           />
+        </div>
+        <div 
+          className={image === 0 ? activeImage : inactiveImage}
+          onClick={() => updateImage(0)}
+          >
+          <iframe 
+            width="auto" 
+            height="auto" 
+            src="https://www.youtube.com/embed/i0M8Io_Ua1Q" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
         </div>
         <div 
           className={image === 1 ? activeImage : inactiveImage}

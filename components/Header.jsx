@@ -6,26 +6,8 @@ import { HiOutlineMail } from 'react-icons/hi';
 const Header = () => {
 
   return (
-    <div className="w-full h-auto text-center mt-16 mb-16 md:mt-32 md:mb-32">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
-        <div>
-          <h1 className="">Hi, I'm <span className="text-primary">Ethan</span></h1>
-          <p className="uppercase text-xs md:text-sm tracking-widest mb-3 mt-3">Full-Stack Web Developer,<br></br>& E-commerce operations specialist</p>
-        </div>
-        <div>
-          <ul className="flex justify-start gap-x-3 mt-3">
-            <a target="_blank" href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
-              <FaLinkedinIn className="" size={25}/>
-            </a>
-            <a target="_blank" href="https://github.com/Ethansteip" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
-              <FaGithub size={25}/>
-            </a>
-            <Link href="#contact-form" className="p-3 bg-primary rounded-full text-white hover:bg-black transition duration-150 ease-in-out">
-              <HiOutlineMail size={25}/>
-            </Link>
-          </ul>
-        </div>
-      </div>
+    <div className="w-screen h-[600px] md:h-screen">
+      <iframe src='https://my.spline.design/landingpagedarkcopy-b61347c8448f53687a9a593a0e381b61/' frameBorder='0' width='100%' height='100%'></iframe>
     </div>
   )
 }

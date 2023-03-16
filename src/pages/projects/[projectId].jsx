@@ -1,10 +1,11 @@
 import React from 'react';
 import PhotoCarousel from 'components/PhotoCarousel';
 import ProjectDescription from 'components/ProjectDescription';
-import { useState } from 'react';
 import path from 'path';
 import { promises as fs } from 'fs';
 import { useRouter } from 'next/router';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 async function getData() {
   const filePath = path.join(process.cwd(), 'json', 'data.json');
@@ -76,6 +77,8 @@ const ProjectDetail = (props) => {
             project_challenges_html={props.projectData.project_challenges_html}
             />
         </div>
+      </div>
+      <div>
       </div>
     </section>
   );
