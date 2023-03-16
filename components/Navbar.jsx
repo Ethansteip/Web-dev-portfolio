@@ -16,6 +16,9 @@ const Navbar = (props) => {
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <Link href="/" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Home</Link>
             <a target="_blank" href="https://resume.creddle.io/resume/39rfhusw3yx" className="p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg">Resume</a>
+            <a target="_blank" href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className='p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg'>Linked In</a>
+            <a  href="#contact-form" className='p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg'>Contact</a>
+            <a  target="_blank" href="https://github.com/Ethansteip" className='p-2 hover:bg-base-200 transition duration-300 ease-in-out rounded-lg'>GitHub</a>
           </ul>
         </div>
       </div>
@@ -33,6 +36,9 @@ const Navbar = (props) => {
       </div>
 
       <div className="navbar-end flex gap-x-5">
+      <a target="_blank" href="https://github.com/Ethansteip" className='hidden md:flex uppercase text-sm text-center tracking-widest'>GitHub</a>
+      <a href="#contact-form" className='hidden md:flex uppercase text-sm text-center tracking-widest'>Contact</a>
+      <a target="_blank" href="https://www.linkedin.com/in/ethan-steip-8a175b120/" className='hidden md:flex uppercase text-sm text-center tracking-widest'>Linked In</a>
       <a target="_blank" href="https://resume.creddle.io/resume/39rfhusw3yx" className="hidden md:flex uppercase text-sm text-center tracking-widest">Resume</a>
       <button onClick={props.toggleDarkMode} className="mr-5">
         { props.darkModeState ? <FaRegMoon size={20}/> : <FiSun size={22}/>}

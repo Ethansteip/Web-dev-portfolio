@@ -47,7 +47,7 @@ const Skills = () => {
   }
 
   return(
-    <section className="flex flex-col justify-center items-center w-full px-5 mb-10">
+    <section className="flex flex-col justify-center items-center w-full px-5 mb-10 mt-10">
       <h2>Skills</h2>
         <p className="uppercase text-sm text-center tracking-widest mb-3 mt-3">These are the technologies I enjoy working with.</p>
 
