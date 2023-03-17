@@ -75,6 +75,7 @@ const ProjectDetail = (props) => {
             project_description_html={props.projectData.project_description_html}
             project_tech_html={props.projectData.project_tech_html}
             project_challenges_html={props.projectData.project_challenges_html}
+            video_link={props.projectData.video_link}
             />
         </div>
       </div>

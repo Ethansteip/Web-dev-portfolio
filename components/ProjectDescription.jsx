@@ -47,7 +47,6 @@ const ProjectDescription = (props) => {
           </p>
         </section>
         <section className="w-full px-5 text-left">
-          {/* <p>{content}</p> */}
           <div className="w-full text-sm md:text-md px-3" dangerouslySetInnerHTML={{ __html: content }}></div>
         </section>
     </section>
